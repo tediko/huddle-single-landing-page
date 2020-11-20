@@ -11,8 +11,12 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    color: #fff;
     min-height: 100vh;
+    background: url('../../assets/img/bg-desktop.svg'), $c-violet;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center left;
+    color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
 
