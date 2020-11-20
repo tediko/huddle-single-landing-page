@@ -1,49 +1,50 @@
 .intro {
-    width: 100%;
+
     &__container {
+        height: 100vh;
+        background: url('../../assets/img/bg-desktop.svg'), $c-violet;
+        background-repeat: no-repeat;
+        padding: 55px 70px 40px 70px;
         display: flex;
         flex-flow: column;
-        max-width: 1300px;
-        margin: 54px auto 0 auto;
+        justify-content: space-between;
     }
 
     &__logo {
         display: block;
-        background: url('../../assets/img/logo.svg');
-        background-repeat: no-repeat;
-        background-size: 16.5%;
-        width: 100%;
-        padding-top: 4.6rem;
+        height: 53px;
     }
 
     &__main {
         display: flex;
         flex-flow: row;
-        margin: 65px 0 0 0;
+        margin-top: 5.9vw;
     }
 
     &__hero {
-        flex: 3;
-        background: url('../../assets/img/illustration-mockups.svg');
-        background-size: 89%;
-        background-repeat: no-repeat;
-        padding-top: 39%;
-        margin: 0 -36px 0 2px;
+        display: flex;
+        align-items: center;
+        flex: 1 0 54.5%;
+
+        img {
+            width: 100%;
+        }
     }
 
     &__content {
-        flex: 2;
+        padding: 0px 22px;
+        margin: 0 0 0 34px;
     }
 
     &__heading {
-        font-size: 2.43rem;
+        font-size: 2.47rem;
         margin-top: 45px;
         line-height: 3.7rem;
     }
 
     &__text {
         margin-top: 23px;
-        font-size: 1.12rem;
+        font-size: 1.125rem;
         max-width: 521px;
         line-height: 1.6rem;
     }
@@ -104,7 +105,6 @@
         align-items: center;
         width: 40px;
         height: 40px;
-        margin: 21px 12px 0 0;
         border: 1px solid lightgray;
         border-radius: 50%;
         color: lightgray;
@@ -122,5 +122,22 @@
             color: $c-magenta;
             transform: scale(1.15);
         }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+    }
+}
+
+@media (min-height: 801px) {
+    .intro__container {
+        background-size: cover;
     }
 }

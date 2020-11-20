@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,68 +14,60 @@ html {
 
 body {
   position: relative;
-  display: flex;
   min-height: 100vh;
-  background: url("../../assets/img/bg-desktop.svg"), #674baf;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center left;
-  color: #fff;
   font-family: 'Open Sans', sans-serif;
+  color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
 
-.intro {
-  width: 100%;
-}
-
 .intro__container {
+  height: 100vh;
+  background: url("../../assets/img/bg-desktop.svg"), #674baf;
+  background-repeat: no-repeat;
+  padding: 55px 70px 40px 70px;
   display: flex;
   flex-flow: column;
-  max-width: 1300px;
-  margin: 54px auto 0 auto;
+  justify-content: space-between;
 }
 
 .intro__logo {
   display: block;
-  background: url("../../assets/img/logo.svg");
-  background-repeat: no-repeat;
-  background-size: 16.5%;
-  width: 100%;
-  padding-top: 4.6rem;
+  height: 53px;
 }
 
 .intro__main {
   display: flex;
   flex-flow: row;
-  margin: 65px 0 0 0;
+  margin-top: 5.9vw;
 }
 
 .intro__hero {
-  flex: 3;
-  background: url("../../assets/img/illustration-mockups.svg");
-  background-size: 89%;
-  background-repeat: no-repeat;
-  padding-top: 39%;
-  margin: 0 -36px 0 2px;
+  display: flex;
+  align-items: center;
+  flex: 1 0 54.5%;
+}
+
+.intro__hero img {
+  width: 100%;
 }
 
 .intro__content {
-  flex: 2;
+  padding: 0px 22px;
+  margin: 0 0 0 34px;
 }
 
 .intro__heading {
-  font-size: 2.43rem;
+  font-size: 2.47rem;
   margin-top: 45px;
   line-height: 3.7rem;
 }
 
 .intro__text {
   margin-top: 23px;
-  font-size: 1.12rem;
+  font-size: 1.125rem;
   max-width: 521px;
   line-height: 1.6rem;
 }
@@ -134,7 +126,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   width: 40px;
   height: 40px;
-  margin: 21px 12px 0 0;
   border: 1px solid lightgray;
   border-radius: 50%;
   color: lightgray;
@@ -150,5 +141,22 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #e882e8;
   color: #e882e8;
   transform: scale(1.15);
+}
+
+.intro__link .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (min-height: 801px) {
+  .intro__container {
+    background-size: cover;
+  }
 }
 /*# sourceMappingURL=main.css.map */
