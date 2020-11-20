@@ -1,6 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 /* Global styles */
 html {
@@ -9,14 +9,9 @@ html {
 
 body {
     position: relative;
-    display: flex;
     min-height: 100vh;
-    background: url('../../assets/img/bg-desktop.svg'), $c-violet;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center left;
-    color: #fff;
     font-family: 'Open Sans', sans-serif;
+    color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
