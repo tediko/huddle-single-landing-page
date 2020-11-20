@@ -15,7 +15,6 @@ html {
 body {
   position: relative;
   display: flex;
-  align-items: center;
   min-height: 100vh;
   background: url("../../assets/img/bg-desktop.svg"), #674baf;
   background-repeat: no-repeat;
@@ -27,5 +26,129 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
+}
+
+.intro {
+  width: 100%;
+}
+
+.intro__container {
+  display: flex;
+  flex-flow: column;
+  max-width: 1300px;
+  margin: 54px auto 0 auto;
+}
+
+.intro__logo {
+  display: block;
+  background: url("../../assets/img/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 16.5%;
+  width: 100%;
+  padding-top: 4.6rem;
+}
+
+.intro__main {
+  display: flex;
+  flex-flow: row;
+  margin: 65px 0 0 0;
+}
+
+.intro__hero {
+  flex: 3;
+  background: url("../../assets/img/illustration-mockups.svg");
+  background-size: 89%;
+  background-repeat: no-repeat;
+  padding-top: 39%;
+  margin: 0 -36px 0 2px;
+}
+
+.intro__content {
+  flex: 2;
+}
+
+.intro__heading {
+  font-size: 2.43rem;
+  margin-top: 45px;
+  line-height: 3.7rem;
+}
+
+.intro__text {
+  margin-top: 23px;
+  font-size: 1.12rem;
+  max-width: 521px;
+  line-height: 1.6rem;
+}
+
+.intro__cta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 56px;
+  margin-top: 27px;
+  border-radius: 40px;
+  background: #fff;
+  overflow: hidden;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #674baf;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+  transition: color 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.intro__cta::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #e882e8;
+  border-radius: 40px;
+  opacity: 0;
+  transform-origin: left;
+  transition: width 250ms ease-in-out, opacity 350ms ease-in;
+  z-index: -1;
+}
+
+.intro__cta:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.intro__cta:hover {
+  color: white;
+  transform: translateY(-3px);
+}
+
+.intro__socials {
+  display: flex;
+  align-self: flex-end;
+}
+
+.intro__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 21px 12px 0 0;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  color: lightgray;
+  text-decoration: none;
+  transition: border 250ms ease-in, color 250ms ease-in, transform 250ms ease-in;
+}
+
+.intro__link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.intro__link:hover {
+  border: 1px solid #e882e8;
+  color: #e882e8;
+  transform: scale(1.15);
 }
 /*# sourceMappingURL=main.css.map */
