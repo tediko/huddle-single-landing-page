@@ -254,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .intro__socials {
     align-self: center;
-    margin: 80px 0 0 0;
+    margin: 80px 0 30px 0;
   }
 }
 
@@ -272,5 +272,31 @@ h1, h2, h3, h4, h5, h6 {
   .intro__heading {
     font-size: 1.625rem;
   }
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #838383;
+  font-size: 0.7rem;
+}
+
+.footer__attribution {
+  text-align: center;
+}
+
+.footer a {
+  color: #acacac;
+  text-decoration: none;
+  transition: color 250ms ease-in;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #e882e8;
 }
 /*# sourceMappingURL=main.css.map */
