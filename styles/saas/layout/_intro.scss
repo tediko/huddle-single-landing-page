@@ -14,7 +14,7 @@
     &__logo {
         display: block;
         height: 53px;
-        /* opacity: 0; */
+        opacity: 0;
         animation: slideLeft 1000ms forwards;
         animation-delay: 500ms;
     }
@@ -102,7 +102,7 @@
     &__socials {
         display: flex;
         align-self: flex-end;
-        /* opacity: 0; */
+        opacity: 0;
         animation: slideRight 1000ms forwards;
         animation-delay: 500ms;
     }

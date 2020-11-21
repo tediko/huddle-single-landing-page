@@ -1,5 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@keyframes slideTop {
+  0% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 .intro__logo {
   display: block;
   height: 53px;
-  /* opacity: 0; */
+  opacity: 0;
   animation: slideLeft 1000ms forwards;
   animation-delay: 500ms;
 }
@@ -123,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 .intro__socials {
   display: flex;
   align-self: flex-end;
-  /* opacity: 0; */
+  opacity: 0;
   animation: slideRight 1000ms forwards;
   animation-delay: 500ms;
 }
