@@ -31,11 +31,15 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .intro__logo {
   display: block;
   height: 53px;
+  /* opacity: 0; */
+  animation: slideLeft 1000ms forwards;
+  animation-delay: 500ms;
 }
 
 .intro__main {
@@ -52,11 +56,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro__hero img {
   width: 100%;
+  animation: slideTop 1500ms;
 }
 
 .intro__content {
   padding: 0px 22px;
   margin: 0 0 0 34px;
+  animation: slideBottom 1500ms;
 }
 
 .intro__heading {
@@ -117,6 +123,9 @@ h1, h2, h3, h4, h5, h6 {
 .intro__socials {
   display: flex;
   align-self: flex-end;
+  /* opacity: 0; */
+  animation: slideRight 1000ms forwards;
+  animation-delay: 500ms;
 }
 
 .intro__link {

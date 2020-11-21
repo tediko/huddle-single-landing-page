@@ -8,11 +8,15 @@
         display: flex;
         flex-flow: column;
         justify-content: space-between;
+        overflow: hidden;
     }
 
     &__logo {
         display: block;
         height: 53px;
+        /* opacity: 0; */
+        animation: slideLeft 1000ms forwards;
+        animation-delay: 500ms;
     }
 
     &__main {
@@ -28,12 +32,14 @@
 
         img {
             width: 100%;
+            animation: slideTop 1500ms;
         }
     }
 
     &__content {
         padding: 0px 22px;
         margin: 0 0 0 34px;
+        animation: slideBottom 1500ms;
     }
 
     &__heading {
@@ -96,6 +102,9 @@
     &__socials {
         display: flex;
         align-self: flex-end;
+        /* opacity: 0; */
+        animation: slideRight 1000ms forwards;
+        animation-delay: 500ms;
     }
 
     &__link {
