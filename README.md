@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-Thanks for checking out this front-end coding challenge. One of the last projects from newbie level - finally! I know that organizing Saas in such a small project is overkill but I just wanted to practice. 
+Thanks for checking out this front-end coding challenge. One of the last projects from newbie level - finally! I know that organizing Sass in such a small project is overkill but I just wanted to practice. 
 
 [PROJECT LIVE PREVIEW](https://huddlesinglelandingpage-tediko.netlify.app/)
 
